@@ -1,5 +1,40 @@
-$primaryColor: red;
-
+$primaryColor: blue;
+html{
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
 body{
-  background-color: $primaryColor;
+  display: flex;
+  width: 300vw;
+
+}
+
+nav{
+  background-color: beige;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+#chapter1{
+    background-color: aqua;
+  flex-basis: calc(100%/3);
+  article{
+
+  }
+}
+
+#chapter2{
+
+}
+
+#chapter3{
+  background-color: aquamarine;
+
+}
+
+article{
+border: solid;
+min-height: 100vh;
+width:100vw;
+
 }

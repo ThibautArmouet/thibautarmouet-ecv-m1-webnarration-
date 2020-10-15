@@ -1,4 +1,31 @@
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
 body {
-  background-color: red;
+  display: flex;
+  width: 300vw;
+}
+
+nav {
+  background-color: beige;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+
+#chapter1 {
+  background-color: aqua;
+  flex-basis: calc(100%/3);
+}
+#chapter3 {
+  background-color: aquamarine;
+}
+
+article {
+  border: solid;
+  min-height: 100vh;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
