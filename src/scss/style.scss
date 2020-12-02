@@ -1,40 +1,166 @@
-$primaryColor: blue;
+$primaryColor: #C00D0D;
+$marge: 32px;
+
 html{
-  scroll-behavior: smooth;
-  overflow: hidden;
-}
-body{
-  display: flex;
-  width: 300vw;
-
-}
-
-nav{
-  background-color: beige;
-  position: fixed;
-  top: 40px;
-  right: 40px;
-}
-#chapter1{
-    background-color: aqua;
-  flex-basis: calc(100%/3);
-  article{
-
-  }
-}
-
-#chapter2{
-
-}
-
-#chapter3{
-  background-color: aquamarine;
-
+overflow-x: hidden;
+scroll-behavior: smooth;
 }
 
 article{
-border: solid;
+
 min-height: 100vh;
 width:100vw;
+position: relative;
+}
 
+#tittle{
+
+  article{
+    background-image:url("http://placehold.it/1280x720");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+      .tittle_content{
+
+        font-size: 111px;
+        position: relative;
+        bottom: -5em;
+        left: 0.8em;
+        width: 791px;
+        font-family: "Bebas neue";
+      }
+
+  }
+
+}
+
+#header{
+
+  .header_content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.25em;
+      margin: 3em 9em 0px 9em;
+        img{
+          border: solid black 1px;
+        }
+    }
+
+
+}
+
+#intro{
+  background-image:url("http://placehold.it/1280x720");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+    .content{
+      font-size:174px;
+      font-family: "Bebas neue";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+        margin-top: 210px;
+    }
+}
+
+#tomprésentation{
+background-color: #FFFF;
+}
+  #c2_tittle{
+
+    h2{
+      font-size: 111px;
+      font-family: "Bebas neue";
+      margin:66px 0 16px 145px;
+
+    }
+
+      p{
+        width: 617px;
+        font-size: 20px;
+        margin:0 0 0 145px;
+      }
+
+        .img_content{
+          display: flex;
+          align-items: center;
+          justify-content:center;
+        }
+
+}
+
+
+
+
+
+.step{
+
+  display: flex;
+  width: 200vw;
+  overflow: hidden;
+  .button{
+    position: absolute;
+    background-color: $primaryColor;
+    width:24px;
+    height: 24px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .sidebar{
+    background-color: $primaryColor;
+    position: absolute;
+    top: 0;
+    right: $marge / 2;
+    width: 33%;
+    height: 100vh;
+    transition: all 1s;
+    transform: translateX(100%);
+    opacity: 0%;
+    color: white;
+    b{
+      color: white;
+    }
+    &.open{
+      transform: translateX(4%);
+      opacity: 100%;
+    }
+  }
+}
+
+
+.img_tom{
+  position: absolute;
+  top: 67%;
+  left: 1%;
+}
+
+.contentdetails{
+
+  display: flex;
+align-items: center;
+
+  .left{
+
+    width: 50vw;
+    height: 100vh;
+
+  }
+
+  .right{
+    width: 50vw;
+    height: 30vh;
+    padding-right: 10%;
+  }
+}
+
+.img_détails{
+    position: absolute;
+    top:10%;
+    left:10%;
 }

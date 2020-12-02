@@ -1,31 +1,132 @@
+@charset "UTF-8";
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
-  overflow: hidden;
-}
-
-body {
-  display: flex;
-  width: 300vw;
-}
-
-nav {
-  background-color: beige;
-  position: fixed;
-  top: 40px;
-  right: 40px;
-}
-
-#chapter1 {
-  background-color: aqua;
-  flex-basis: calc(100%/3);
-}
-#chapter3 {
-  background-color: aquamarine;
 }
 
 article {
-  border: solid;
   min-height: 100vh;
   width: 100vw;
+  position: relative;
+}
+
+#tittle article {
+  background-image: url("http://placehold.it/1280x720");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#tittle article .tittle_content {
+  font-size: 111px;
+  position: relative;
+  bottom: -5em;
+  left: 0.8em;
+  width: 791px;
+  font-family: "Bebas neue";
+}
+
+#header .header_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.25em;
+  margin: 3em 9em 0px 9em;
+}
+#header .header_content img {
+  border: solid black 1px;
+}
+
+#intro {
+  background-image: url("http://placehold.it/1280x720");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#intro .content {
+  font-size: 174px;
+  font-family: "Bebas neue";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 210px;
+}
+
+#tomprésentation {
+  background-color: #FFFF;
+}
+
+#c2_tittle h2 {
+  font-size: 111px;
+  font-family: "Bebas neue";
+  margin: 66px 0 16px 145px;
+}
+#c2_tittle p {
+  width: 617px;
+  font-size: 20px;
+  margin: 0 0 0 145px;
+}
+#c2_tittle .img_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  width: 200vw;
+  overflow: hidden;
+}
+.step .button {
+  position: absolute;
+  background-color: #C00D0D;
+  width: 24px;
+  height: 24px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.step .sidebar {
+  background-color: #C00D0D;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 33%;
+  height: 100vh;
+  transition: all 1s;
+  transform: translateX(100%);
+  opacity: 0%;
+  color: white;
+}
+.step .sidebar b {
+  color: white;
+}
+.step .sidebar.open {
+  transform: translateX(4%);
+  opacity: 100%;
+}
+
+.img_tom {
+  position: absolute;
+  top: 67%;
+  left: 1%;
+}
+
+.contentdetails {
+  display: flex;
+  align-items: center;
+}
+.contentdetails .left {
+  width: 50vw;
+  height: 100vh;
+}
+.contentdetails .right {
+  width: 50vw;
+  height: 30vh;
+  padding-right: 10%;
+}
+
+.img_détails {
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 /*# sourceMappingURL=style.css.map */
