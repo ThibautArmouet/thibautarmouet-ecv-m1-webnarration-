@@ -19,7 +19,7 @@ article {
   font-size: 111px;
   position: relative;
   bottom: -5em;
-  left: 0.8em;
+  left: 6%;
   width: 791px;
   font-family: "Bebas neue";
 }
@@ -29,24 +29,65 @@ article {
   align-items: center;
   justify-content: space-between;
   height: 6.25em;
-  margin: 3em 9em 0px 9em;
+  margin: 0 9em 0px 9em;
 }
 #header .header_content img {
-  border: solid black 1px;
+  margin-top: 5em;
+}
+#header .header_content button {
+  width: 245px;
+  height: 57px;
+  padding: 16px 20px;
+  background: #FFFFFF;
+  color: #C00D0D;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "nunito";
+  margin-top: 5em;
+}
+#header .cta {
+  position: relative;
+  top: 15em;
+}
+#header .cta #cta_intro {
+  text-decoration: none;
+}
+#header .cta #cta_intro p {
+  color: #FFFF;
+  font-size: 16px;
+  font-weight: 50;
+  font-family: "nunito";
+  text-align: center;
 }
 
 #intro {
-  background-image: url("http://placehold.it/1280x720");
+  background-image: url("/src/image/introbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 #intro .content {
-  font-size: 174px;
-  font-family: "Bebas neue";
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#intro .content h1 {
+  font-size: 174px;
+  font-family: "Bebas neue";
+  color: #FFFF;
+  letter-spacing: 0.015em;
   margin-top: 210px;
+  margin-bottom: 24px;
+  height: 166px;
+}
+#intro .content h2 {
+  font-size: 34px;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  font-family: "nunito";
+  font-weight: 100;
+  margin-top: 8px;
 }
 
 #tomprésentation {
@@ -90,14 +131,18 @@ article {
   top: 0;
   right: 16px;
   width: 33%;
-  height: 100vh;
+  height: 105vh;
   transition: all 1s;
   transform: translateX(100%);
   opacity: 0%;
   color: white;
+  padding: 32px;
 }
-.step .sidebar b {
-  color: white;
+.step .sidebar H3 {
+  color: #ECE6CF;
+  font-size: 34px;
+  font-family: "Bebas neue";
+  margin-bottom: 32px;
 }
 .step .sidebar.open {
   transform: translateX(4%);
@@ -123,10 +168,22 @@ article {
   height: 30vh;
   padding-right: 10%;
 }
+.contentdetails .right h2 {
+  font-size: 70px;
+  font-family: "Bebas neue";
+  color: #C00D0D;
+}
 
 .img_détails {
   position: absolute;
   top: 10%;
   left: 10%;
+}
+
+.first_step .background {
+  background-image: url("/src/image/premiere.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /*# sourceMappingURL=style.css.map */

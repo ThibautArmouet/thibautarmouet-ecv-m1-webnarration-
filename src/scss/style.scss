@@ -1,16 +1,18 @@
 $primaryColor: #C00D0D;
 $marge: 32px;
+$typocorp: "nunito";
+
 
 html{
-overflow-x: hidden;
-scroll-behavior: smooth;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 article{
 
-min-height: 100vh;
-width:100vw;
-position: relative;
+  min-height: 100vh;
+  width:100vw;
+  position: relative;
 }
 
 #tittle{
@@ -21,15 +23,16 @@ position: relative;
     background-size: cover;
 
 
-      .tittle_content{
+    .tittle_content{
 
-        font-size: 111px;
-        position: relative;
-        bottom: -5em;
-        left: 0.8em;
-        width: 791px;
-        font-family: "Bebas neue";
-      }
+      font-size: 111px;
+      position: relative;
+      bottom: -5em;
+      left:6%;
+      width: 791px;
+      font-family: "Bebas neue";
+
+    }
 
   }
 
@@ -37,59 +40,112 @@ position: relative;
 
 #header{
 
+
   .header_content{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 6.25em;
-      margin: 3em 9em 0px 9em;
-        img{
-          border: solid black 1px;
-        }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6.25em;
+    margin: 0 9em 0px 9em;
+    img{
+
+      margin-top: 5em;
     }
+    button{
+
+      width: 245px;
+      height: 57px;
+      padding: 16px 20px;
+      background: #FFFFFF;
+      color: $primaryColor;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: $typocorp;
+      margin-top: 5em;
+    }
+
+  }
+.cta{
+    position: relative;
+  top: 15em;
+  #cta_intro{
+
+  text-decoration: none;
+    p{
+
+      color: #FFFF;
+      font-size: 16px;
+      font-weight: 50;
+      font-family: $typocorp;
+      text-align: center;
+    }
+
+
+  }
+}
 
 
 }
 
 #intro{
-  background-image:url("http://placehold.it/1280x720");
+  background-image:url("/src/image/introbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 
 
-    .content{
-      font-size:174px;
-      font-family: "Bebas neue";
-      display: flex;
-      align-items: center;
-      justify-content: center;
-        margin-top: 210px;
-    }
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+
+
+    font-size:174px;
+    font-family: "Bebas neue";
+    color: #FFFF;
+    letter-spacing: 0.015em;
+    margin-top: 210px;
+    margin-bottom: 24px;
+    height: 166px;
+
+  }
+  h2{
+      font-size: 34px;
+      letter-spacing: -0.03em;
+      color: #FFFFFF;
+      font-family: $typocorp;
+      font-weight: 100;
+      margin-top: 8px;
+
+  }
+  }
 }
 
 #tomprésentation{
-background-color: #FFFF;
+  background-color: #FFFF;
 }
-  #c2_tittle{
+#c2_tittle{
 
-    h2{
-      font-size: 111px;
-      font-family: "Bebas neue";
-      margin:66px 0 16px 145px;
+  h2{
+    font-size: 111px;
+    font-family: "Bebas neue";
+    margin:66px 0 16px 145px;
 
-    }
+  }
 
-      p{
-        width: 617px;
-        font-size: 20px;
-        margin:0 0 0 145px;
-      }
+  p{
+    width: 617px;
+    font-size: 20px;
+    margin:0 0 0 145px;
+  }
 
-        .img_content{
-          display: flex;
-          align-items: center;
-          justify-content:center;
-        }
+  .img_content{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
 
 }
 
@@ -118,13 +174,17 @@ background-color: #FFFF;
     top: 0;
     right: $marge / 2;
     width: 33%;
-    height: 100vh;
+    height: 105vh;
     transition: all 1s;
     transform: translateX(100%);
     opacity: 0%;
     color: white;
-    b{
-      color: white;
+    padding: $marge;
+    H3{
+      color: #ECE6CF;
+      font-size: 34px;
+      font-family: "Bebas neue";
+      margin-bottom: $marge;
     }
     &.open{
       transform: translateX(4%);
@@ -143,7 +203,7 @@ background-color: #FFFF;
 .contentdetails{
 
   display: flex;
-align-items: center;
+  align-items: center;
 
   .left{
 
@@ -156,11 +216,32 @@ align-items: center;
     width: 50vw;
     height: 30vh;
     padding-right: 10%;
+
+    h2{
+      font-size: 70px;
+      font-family: "Bebas neue";
+      color: $primaryColor;
+    }
   }
 }
 
 .img_détails{
-    position: absolute;
-    top:10%;
-    left:10%;
+  position: absolute;
+  top:10%;
+  left:10%;
+}
+
+.first_step{
+
+  .background{
+    background-image: url('/src/image/premiere.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
+    ;
+
+  }
+
+
+
 }
