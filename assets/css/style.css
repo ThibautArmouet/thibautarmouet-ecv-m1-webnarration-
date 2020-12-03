@@ -62,7 +62,7 @@ article {
 }
 
 #intro {
-  background-image: url("/src/image/introbg.png");
+  background-image: url("src/image/introbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -181,7 +181,7 @@ article {
 }
 
 .first_step .background {
-  background-image: url("/src/image/premiere.png");
+  background-image: url("src/image/premiere.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
