@@ -62,7 +62,7 @@ article {
 }
 
 #intro {
-  background-image: url("src/image/introbg.png");
+  background-image: url("/src/image/introbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -124,6 +124,7 @@ article {
   top: 50%;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 21;
 }
 .step .sidebar {
   background-color: #C00D0D;
@@ -137,6 +138,7 @@ article {
   opacity: 0%;
   color: white;
   padding: 32px;
+  z-index: 21;
 }
 .step .sidebar H3 {
   color: #ECE6CF;
@@ -153,6 +155,12 @@ article {
   position: absolute;
   top: 67%;
   left: 1%;
+  z-index: 21;
+}
+
+.backbutoon {
+  position: relative;
+  z-index: 99;
 }
 
 .contentdetails {
@@ -181,9 +189,60 @@ article {
 }
 
 .first_step .background {
-  background-image: url("src/image/premiere.png");
+  background-image: url("/src/image/premiere.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.container_timeline {
+  position: fixed;
+  z-index: 20;
+}
+.container_timeline .button_timeline {
+  position: absolute;
+  background-color: #ECE6CF;
+  width: 100px;
+  height: 110px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-48px) translateX(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container_timeline .timeline {
+  background-color: #ECE6CF;
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 200px;
+  height: 105vh;
+  transition: all 1s;
+  transform: translateX(-100%);
+  color: white;
+  padding: 32px;
+}
+.container_timeline .timeline H3 {
+  color: #C00D0D;
+  font-size: 34px;
+  font-family: "Bebas neue";
+  margin-bottom: 32px;
+}
+.container_timeline .timeline.open {
+  transform: translateX(10%);
+}
+.container_timeline .timeline li {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 40%;
+  margin-bottom: 80px;
+  background-color: #C00D0D;
+}
+.container_timeline .timeline img {
+  position: absolute;
+  left: 40%;
+  top: 6px;
 }
 /*# sourceMappingURL=style.css.map */

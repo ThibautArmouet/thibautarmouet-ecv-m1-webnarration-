@@ -1,6 +1,8 @@
 $primaryColor: #C00D0D;
+$secondaryColor: #ECE6CF;
 $marge: 32px;
 $typocorp: "nunito";
+$typotitle: "Bebas neue"
 
 
 html{
@@ -24,12 +26,13 @@ article{
 
 
     .tittle_content{
+
       font-size: 111px;
       position: relative;
       bottom: -5em;
       left:6%;
       width: 791px;
-      font-family: "Bebas neue";
+      font-family: $typotitle;
 
     }
 
@@ -38,7 +41,6 @@ article{
 }
 
 #header{
-
 
   .header_content{
     display: flex;
@@ -88,7 +90,7 @@ article{
 }
 
 #intro{
-  background-image:url("src/image/introbg.png");
+  background-image:url("/src/image/introbg.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -102,7 +104,7 @@ article{
 
 
     font-size:174px;
-    font-family: "Bebas neue";
+    font-family: $typotitle;
     color: #FFFF;
     letter-spacing: 0.015em;
     margin-top: 210px;
@@ -129,7 +131,7 @@ article{
 
   h2{
     font-size: 111px;
-    font-family: "Bebas neue";
+    font-family: $typotitle;
     margin:66px 0 16px 145px;
 
   }
@@ -157,6 +159,7 @@ article{
   display: flex;
   width: 200vw;
   overflow: hidden;
+
   .button{
     position: absolute;
     background-color: $primaryColor;
@@ -166,6 +169,7 @@ article{
     top: 50%;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 21;
   }
   .sidebar{
     background-color: $primaryColor;
@@ -179,10 +183,11 @@ article{
     opacity: 0%;
     color: white;
     padding: $marge;
+    z-index: 21;
     H3{
       color: #ECE6CF;
       font-size: 34px;
-      font-family: "Bebas neue";
+      font-family: $typotitle;
       margin-bottom: $marge;
     }
     &.open{
@@ -197,6 +202,12 @@ article{
   position: absolute;
   top: 67%;
   left: 1%;
+  z-index: 21;
+
+}
+.backbutoon{
+  position: relative;
+  z-index: 99;
 }
 
 .contentdetails{
@@ -218,7 +229,7 @@ article{
 
     h2{
       font-size: 70px;
-      font-family: "Bebas neue";
+      font-family: $typotitle;
       color: $primaryColor;
     }
   }
@@ -233,14 +244,67 @@ article{
 .first_step{
 
   .background{
-    background-image: url('src/image/premiere.png');
+    background-image: url('/src/image/premiere.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center
     ;
 
   }
-
-
-
 }
+
+.container_timeline{
+  position: fixed;
+    z-index: 20;
+
+    .button_timeline{
+      position: absolute;
+      background-color: $secondaryColor;
+      width: 100px;
+      height: 110px;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-48px) translateX(-50%);
+      border-radius: 50%;
+      cursor: pointer;
+
+      }
+  .timeline{
+    background-color: $secondaryColor;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 200px;
+    height: 105vh;
+    transition: all 1s;
+    transform: translateX(-100%);
+    color: white;
+    padding: $marge;
+
+    H3{
+      color: $primaryColor;
+      font-size: 34px;
+      font-family: $typotitle;
+      margin-bottom: $marge;
+    }
+    &.open{
+      transform: translateX(10%);
+
+    }
+    li{
+      position: relative;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      left: 40%;
+      margin-bottom: 80px;
+      background-color: $primaryColor;
+    }
+    img{
+      position: absolute;
+      left: 40%;
+      top: 6px;
+
+    }
+    }
+  }
