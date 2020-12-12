@@ -1,7 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap");
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 article {
@@ -10,12 +14,12 @@ article {
   position: relative;
 }
 
-#tittle article {
+.tittle article {
   background-image: url("http://placehold.it/1280x720");
   background-repeat: no-repeat;
   background-size: cover;
 }
-#tittle article .tittle_content {
+.tittle article .tittle_content {
   font-size: 111px;
   position: relative;
   bottom: -5em;
@@ -24,12 +28,29 @@ article {
   font-family: "Bebas neue";
 }
 
+#header .topvideo {
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  width: 100vw;
+}
+#header .videobg {
+  width: 110vw;
+  z-index: 1;
+}
+#header .videobg video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: center;
+}
 #header .header_content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 6.25em;
   margin: 0 9em 0px 9em;
+  z-index: 9;
 }
 #header .header_content img {
   margin-top: 5em;
@@ -37,7 +58,7 @@ article {
 #header .header_content button {
   width: 245px;
   height: 57px;
-  padding: 16px 20px;
+  padding: 16px 19px;
   background: #FFFFFF;
   color: #C00D0D;
   border: none;
@@ -60,19 +81,13 @@ article {
   font-family: "nunito";
   text-align: center;
 }
-
-#intro {
-  background-image: url("/src/image/introbg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#intro .content {
+#header .content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#intro .content h1 {
+#header .content h1 {
   font-size: 174px;
   font-family: "Bebas neue";
   color: #FFFF;
@@ -81,7 +96,7 @@ article {
   margin-bottom: 24px;
   height: 166px;
 }
-#intro .content h2 {
+#header .content h2 {
   font-size: 34px;
   letter-spacing: -0.03em;
   color: #FFFFFF;
@@ -94,26 +109,77 @@ article {
   background-color: #FFFF;
 }
 
-#c2_tittle h2 {
+#tom_explication h2 {
   font-size: 111px;
   font-family: "Bebas neue";
   margin: 66px 0 16px 145px;
 }
-#c2_tittle p {
+#tom_explication p {
   width: 617px;
   font-size: 20px;
   margin: 0 0 0 145px;
 }
-#c2_tittle .img_content {
+#tom_explication .img_content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .step {
+  width: 100vw;
+}
+.step .button_detail {
+  position: absolute;
+  top: 67%;
+  left: 1%;
+  z-index: 21;
+  background-color: #C00D0D;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.step .details {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 100vw;
+  height: 105vh;
+  transition: all 1s;
+  transform: translateX(110%);
+  color: black;
+  padding: 32px;
+  z-index: 99;
+}
+.step .details .backbutoon {
+  position: relative;
+  z-index: 99;
+}
+.step .details .contentdetails {
   display: flex;
-  width: 200vw;
-  overflow: hidden;
+  align-items: center;
+}
+.step .details .contentdetails .left {
+  width: 50vw;
+  height: 100vh;
+}
+.step .details .contentdetails .left .img_détails {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.step .details .contentdetails .right {
+  width: 50vw;
+  height: 30vh;
+  padding-right: 10%;
+}
+.step .details .contentdetails .right h2 {
+  font-size: 70px;
+  font-family: "Bebas neue";
+  color: #C00D0D;
+}
+.step .details.open {
+  transform: translateX(0%);
 }
 .step .button {
   position: absolute;
@@ -132,7 +198,7 @@ article {
   top: 0;
   right: 16px;
   width: 33%;
-  height: 105vh;
+  height: 100vh;
   transition: all 1s;
   transform: translateX(100%);
   opacity: 0%;
@@ -151,43 +217,6 @@ article {
   opacity: 100%;
 }
 
-.img_tom {
-  position: absolute;
-  top: 67%;
-  left: 1%;
-  z-index: 21;
-}
-
-.backbutoon {
-  position: relative;
-  z-index: 99;
-}
-
-.contentdetails {
-  display: flex;
-  align-items: center;
-}
-.contentdetails .left {
-  width: 50vw;
-  height: 100vh;
-}
-.contentdetails .right {
-  width: 50vw;
-  height: 30vh;
-  padding-right: 10%;
-}
-.contentdetails .right h2 {
-  font-size: 70px;
-  font-family: "Bebas neue";
-  color: #C00D0D;
-}
-
-.img_détails {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
 .first_step .background {
   background-image: url("/src/image/premiere.png");
   background-repeat: no-repeat;
@@ -195,11 +224,26 @@ article {
   background-position: center center;
 }
 
-.container_timeline {
+.timeline {
+  background-color: #ECE6CF;
   position: fixed;
-  z-index: 20;
+  top: 0;
+  left: -20px;
+  width: 200px;
+  height: 105vh;
+  transition: all 1s;
+  transform: translateX(-100%);
+  color: white;
+  padding: 32px;
+  z-index: 999;
 }
-.container_timeline .button_timeline {
+.timeline H3 {
+  color: #C00D0D;
+  font-size: 34px;
+  font-family: "Bebas neue";
+  margin-bottom: 32px;
+}
+.timeline .button_timeline {
   position: absolute;
   background-color: #ECE6CF;
   width: 100px;
@@ -210,28 +254,10 @@ article {
   border-radius: 50%;
   cursor: pointer;
 }
-.container_timeline .timeline {
-  background-color: #ECE6CF;
-  position: absolute;
-  top: 0;
-  left: -20px;
-  width: 200px;
-  height: 105vh;
-  transition: all 1s;
-  transform: translateX(-100%);
-  color: white;
-  padding: 32px;
-}
-.container_timeline .timeline H3 {
-  color: #C00D0D;
-  font-size: 34px;
-  font-family: "Bebas neue";
-  margin-bottom: 32px;
-}
-.container_timeline .timeline.open {
+.timeline.open {
   transform: translateX(10%);
 }
-.container_timeline .timeline li {
+.timeline li {
   position: relative;
   width: 15px;
   height: 15px;
@@ -240,7 +266,7 @@ article {
   margin-bottom: 80px;
   background-color: #C00D0D;
 }
-.container_timeline .timeline img {
+.timeline img {
   position: absolute;
   left: 40%;
   top: 6px;

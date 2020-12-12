@@ -8,11 +8,11 @@
 </head>
 <body>
 
-  <article class="container_timeline">
 
-    <article id="timeline" class="timeline">
-<div class="button_timeline" data-target="#timeline"></div>
-  <img src="/src/image/lignet.png" alt="">
+
+  <article id="timeline" class="timeline">
+    <div class="button_timeline" data-target="#timeline"></div>
+    <img src="/src/image/lignet.png" alt="">
     <nav>
       <ul>
         <li></li>
@@ -27,38 +27,47 @@
       </ul>
     </nav>
 
-    </article>
   </article>
 
 
+
   <section id="intro">
+
     <article id="header">
-      <div class="header_content"><img src="/src/image/logotdl.png" alt="">
-        <button type="button" name="button">Voir les fermes en aquitaines</button>
+      <div class="videobg">
+            <video src="/src/image/timelapse.MOV"  autoplay="true" muted="true" loop='true'></video>
       </div>
-      <div class="content">
-        <h1>HISTOIRE DE FERME</h1>
-        <img src="/src/image/ligne.png" alt="">
-        <h2>Découvrez les étapes d’une  ferme Terre de Liens  </h2>
-      </div>
-      <div class="cta">
-        <a href="#" id="cta_intro">
-          <p>Démarre l'aventure</p>
-        </a>
-      </div>
+
+  <div class="topvideo">
+    <div class="header_content">
+      <img src="/src/image/logotdl.png" alt="">
+      <button type="button" name="button">Voir les fermes en aquitaines</button>
+    </div>
+    <div class="content">
+      <h1>HISTOIRE DE FERME</h1>
+      <img src="/src/image/ligne.png" alt="">
+      <h2>Découvrez les étapes d’une  ferme Terre de Liens  </h2>
+    </div>
+    <div class="cta">
+      <a href="#" id="cta_intro">
+        <p>Démarre l'aventure</p>
+      </a>
+    </div>
+  </div>
+
     </article>
 
   </section>
 
   <section id="tomprésentation">
-    <article id="c2_tittle">
+    <article id="tom_explication">
       <h2>SUIVEZ LE GUIDE</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel nunc nec libero consectetur suscipit ut eu tellus. Nunc quis est a massa auctor egestas id vitae arcu. Integer dictum varius nulla, non faucibus leo. Duis mattis vel justo ut convallis. Phasellus sed mauris nisl. Nullam ex lectus, ultricies non elit consectetur, blandit tincidunt nulla. Morbi sed dolor et ligula tincidunt congue.</p>
       <div class="img_content"><img src="http://placehold.it/300x600" alt=""></div>
     </article>
   </section>
 
-  <section id="tittle">
+  <section class="tittle">
 
     <article>
       <h2 class="tittle_content">Étapes 1 de notre parcours</h2>
@@ -67,20 +76,20 @@
   </section>
 
   <section class="step first_step">
-
     <article class="background">
-      <div class="button" data-target="#sidebar1"></div>
-      <article id="sidebar1" class="sidebar">
+        <div class="button" data-target="#sidebar1"></div>
+          <article id="sidebar1" class="sidebar">
 
         <H3>
-          EXPLICATION
+          1. La rencontre avec TDL
         </H3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Pour les agriculteurs qui choisissent de lancer leur activité sur une ferme appartenant à Terre de Liens, l’appui à l’installation proposé par Terre de Liens ne se limite pas à la "remise des clefs" et s’apparente plutôt à un accompagnement.
+          Le cas le plus courant d’installation sur une ferme Terre de Liens commence par une recherche de terres pour un projet agricole. Le ou les porteur(s) de ce projet demandent à Terre de Liens de les aider à trouver une terre puis de l’acquérir pour ensuite la leur mettre à disposition.
+          Une instruction débute alors pour vérifier la solidité du projet et étudier les possibilités techniques d’acquisition de la ferme repérée.
         </p>
-
       </article>
+
       <div class="img_tom">
         <a href="" class="nav">
           <img src="http://placehold.it/300x300" alt="">
@@ -91,7 +100,7 @@
 
   </section>
 
-  <section id="tittle">
+  <section class="tittle">
 
     <article>
       <h2 class="tittle_content">Étapes 2 de notre parcours</h2>
@@ -101,50 +110,47 @@
   </section>
 
 
-  <section class="step second_step">
+<section class="step second_step">
 
-    <article id="back1">
-      <div class="button" data-target="#sidebar2"></div>
-      <article id="sidebar2"class="sidebar">
+    <article>
+        <div class="button" data-target="#sidebar2"></div>
+        <article id="sidebar2" class="sidebar">
+          <H3>2. Repérage d’une terre à vendre  </H3>
+          <p>
+          Les bénévoles sont souvent les premiers acteurs du repérage de terres vacantes.
+          Pour que Terre de Liens achète des terres, la motivation seule d’un candidat n’est pas suffisante. Avant de confier les terres aux porteurs de projet, nous essayons de comprendre les motivations profondes des candidats à l’installation notamment pour leur éviter des déconvenues voir des échecs douloureux une fois installés. Un accompagnement sur la durée des porteurs de projet est souvent nécessaire, ces derniers étant généralement dans des trajectoires de reconversion professionnelle avec peu d’expérience concrète du métier de paysan.
+          </p>
+        </article>
 
-        <H3>
-          EXPLICATION
-        </H3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
 
-      </article>
-      <div class="img_tom">
-        <a href="#first_détails">
-          <img src="http://placehold.it/300x300" alt="">
-        </a>
-      </div>
-    </article>
-    <article id="first_détails">
-      <div class="backbutoon">
-        <a href="#back1">Retour</a>
-      </div>
-      <div class="contentdetails">
-        <div class="left">
-          <img src="http://placehold.it/400x700" alt="" class="img_détails">
-        </div>
-        <div class="right">
 
-          <h2>TITRE</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.</p>
+        <div class="button_detail" ><img src="http://placehold.it/300x300" alt="" data-target="#detail1"></div>
+        <article id="detail1" class="details">
+          <div class="backbutoon" data-target="#detail1">Retour</div>
+
+          <div class="contentdetails">
+
+            <div class="left">
+              <img src="http://placehold.it/400x700" alt="" class="img_détails">
+            </div>
+
+            <div class="right">
+
+              <h2>Témoignage d'une bénévole</h2>
+              <p>« Le maraîchage était naguère une activité dominante des plaines du nord-est de l’agglomération parisienne. Mais les céréales, cultivées de façon conventionnelle, l’ont progressivement remplacé. Si l’utilisation de Geoportail permet de distinguer les parcelles agricoles, l’initiation d’un projet nécessite l’identification de propriétaires, information que les services municipaux peuvent garder confidentielle. Nous avons compris que l’activité de veille foncière ne pouvait être efficace que si elle est menée en parallèle de discussions avec les élus, qui sont encore peu sensibilisés aux bienfaits économiques, écologiques et sociaux de la préservation de terres agricoles. » </p>
+
+            </div>
 
           </div>
+        </article>
 
-        </div>
 
-      </article>
+</article>
+
+
     </section>
 
-    <section id="tittle">
+    <section class="tittle">
 
       <article>
         <h2 class="tittle_content">Étapes 3 de notre parcours</h2>
@@ -160,42 +166,50 @@
         <article id=sidebar3 class="sidebar">
 
           <H3>
-            EXPLICATION
+            3. Faisabilité technique
           </H3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Les activités soutenues par Terre de Liens sont très diverses mais un ensemble de valeurs servent de fil rouge :
+            <ul>
+              <li>- Une agriculture bio ou biodynamique, respectueuse de l’environnement, vivifiant les sols et rééquilibrant les écosystèmes</li>
+              <li>- Des productions à finalités principalement alimentaires et s’inscrivant dans l’économie solidaire</li>
+              <li>- Des fermes paysannes, à taille humaine, favorisant la création d’emploi, économiquement viables et transmissibles</li>
+              <li>- Une commercialisation locale qui privilégie circuits courts et liens avec le territoire</li>
+              <li>- Des cultures adaptées au terroir local et respectueuses des saisons</li>
+              <li>- Une diversité des productions et de la polyculture lorsque c’est possible</li>
+              <li>- Des installations multiples lorsqu’une complémentarité émerge entre plusieurs agriculteurs (fourrages, élevage, fumier...)</li>
+            </ul>
+
+
+
+
           </p>
 
         </article>
-        <div class="img_tom">
-          <a href="#second_details">
-            <img src="http://placehold.it/300x300" alt="">
-          </a>
-        </div>
-      </article>
-      <article id="second_details">
-        <div class="backbutoon">
-          <a href="#back2">Retour</a>
-        </div>
-        <div class="contentdetails">
-          <div class="left">
-            <img src="http://placehold.it/400x700" alt="" class="img_détails">
-          </div>
-          <div class="right">
+        <div class="button_detail" ><img src="http://placehold.it/300x300" alt="" data-target="#detail2"></div>
+        <article id="detail2" class="details">
+          <div class="backbutoon" data-target="#detail2">Retour</div>
 
-            <h2>TITRE</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.</p>
+          <div class="contentdetails">
+
+            <div class="left">
+              <img src="http://placehold.it/400x700" alt="" class="img_détails">
+            </div>
+
+            <div class="right">
+
+              <h2>Témoignage d'une bénévole</h2>
+              <p>« Le maraîchage était naguère une activité dominante des plaines du nord-est de l’agglomération parisienne. Mais les céréales, cultivées de façon conventionnelle, l’ont progressivement remplacé. Si l’utilisation de Geoportail permet de distinguer les parcelles agricoles, l’initiation d’un projet nécessite l’identification de propriétaires, information que les services municipaux peuvent garder confidentielle. Nous avons compris que l’activité de veille foncière ne pouvait être efficace que si elle est menée en parallèle de discussions avec les élus, qui sont encore peu sensibilisés aux bienfaits économiques, écologiques et sociaux de la préservation de terres agricoles. » </p>
 
             </div>
 
           </div>
         </article>
+      </article>
+
       </section>
 
-      <section id="tittle">
+      <section class="tittle">
 
         <article>
           <h2 class="tittle_content">Étapes 4 de notre parcours</h2>
@@ -212,11 +226,13 @@
           <article id="sidebar4" class="sidebar">
 
             <H3>
-              EXPLICATION
+              4. Montage du dossier et examen par le comité d’engagement
             </H3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              TDL s’engage avec les porteurs de projet dès le début du processus de location de terre. L’association sera donc présente aussi pour aider les futurs exploitants à monter leur dossier pour le comité d’engagement.
+              Lorsque la demande et l’offre se rencontrent, un dossier est formellement présenté devant un comité d’engagement (CE), instance composée de bénévoles sélectionnés pour leurs compétences spécifiques dans différents domaines (agronomie, économie, gestion, etc.). Le CE donne un avis consultatif sur les projets d’achat de fermes par la Foncière et la Fondation.
+                <br>
+              Signe de la qualité des instructions réalisées, le taux de validation des dossiers présentés est supérieur à 80 %. Mais les critères pris en compte ne sont heureusement pas seulement économiques. Tout futur fermier Terre de Liens doit s’engager, a minima, à adhérer à la Charte de Terre de Liens, à la Charte de l’agriculture paysanne, et à s’installer en agriculture biologique ou biodynamique dans l’optique d’une production majoritairement nourricière. L’affirmation de ce socle de valeurs permet d’ailleurs de soutenir des projets à forte dimension sociale
             </p>
 
           </article>
@@ -229,7 +245,7 @@
 
       </section>
 
-      <section id="tittle">
+      <section class="tittle">
 
         <article>
           <h2 class="tittle_content">Étapes 5 de notre parcours</h2>
@@ -241,47 +257,46 @@
       <section class="step fifth_step">
 
 
-        <article id="back3">
+        <article>
           <div class="button" data-target="#sidebar5"></div>
           <article id=sidebar5 class="sidebar">
 
             <H3>
-              EXPLICATION
+              5. Lancement de la collecte de dons
             </H3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Que vous souhaitiez agrandir vos terres que vous possédez déjà ou que vous soyez encore au stade de porteur de projet, la collecte de dons s’adresse à tous.
+
+              Si vous avez déjà entrepris toutes les démarches pour l’agrandissement de vos terres  vous pouvez solicitez Terre de Liens, qui pourra après avoir évalué la faisabilité du projet se porter acquéreur des terres supplémentaires que vous souhaitez avoir, Terre de Liens vous louera ensuite les terres.
+
+              Si vous êtes au stade de porteur de projet et que toutes les étapes en amont ont été respectées et validées avec Terre de Liens, le lancement de la collecte de dons peut être lancé.
+              Cette collecte de dons permet d’aider Terre de Liens à acquérir les terres que vous aviez repérer au début du processus pour vous permettre entant que porteur de projet de louer ces terres à l’association.
             </p>
 
           </article>
-          <div class="img_tom">
-            <a href="#third_details">
-              <img src="http://placehold.it/300x300" alt="">
-            </a>
-          </div>
-        </article>
-        <article id='third_details'>
-          <div class="backbutoon">
-            <a href="#back3">Retour</a>
-          </div>
-          <div class="contentdetails">
-            <div class="left">
-              <img src="http://placehold.it/400x700" alt="" class="img_détails">
-            </div>
-            <div class="right">
+          <div class="button_detail" ><img src="http://placehold.it/300x300" alt="" data-target="#detail3"></div>
+          <article id="detail3" class="details">
+            <div class="backbutoon" data-target="#detail3">Retour</div>
 
-              <h2>TITRE</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ad quidem, quasi veritatis iusto non quas, distinctio sit voluptas, soluta porro ullam expedita dolorum saepe quibusdam illum doloremque. Aut, nemo.</p>
+            <div class="contentdetails">
+
+              <div class="left">
+                <img src="http://placehold.it/400x700" alt="" class="img_détails">
+              </div>
+
+              <div class="right">
+
+                <h2>Témoignage d'une bénévole</h2>
+                <p>« Le maraîchage était naguère une activité dominante des plaines du nord-est de l’agglomération parisienne. Mais les céréales, cultivées de façon conventionnelle, l’ont progressivement remplacé. Si l’utilisation de Geoportail permet de distinguer les parcelles agricoles, l’initiation d’un projet nécessite l’identification de propriétaires, information que les services municipaux peuvent garder confidentielle. Nous avons compris que l’activité de veille foncière ne pouvait être efficace que si elle est menée en parallèle de discussions avec les élus, qui sont encore peu sensibilisés aux bienfaits économiques, écologiques et sociaux de la préservation de terres agricoles. » </p>
 
               </div>
 
             </div>
           </article>
+          </article>
         </section>
 
-        <section id="tittle">
+        <section class="tittle">
 
           <article>
             <h2 class="tittle_content">Étapes 6 de notre parcours</h2>
@@ -298,15 +313,17 @@
             <article id=sidebar6 class="sidebar">
 
               <H3>
-                EXPLICATION
+                6. TDL s’engage
               </H3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Pour acquérir des fermes, Terre de Liens intervient via ses deux structures financières, la Foncière et la Fondation. Après un travail minutieux (analyse des coûts, conformité du projet agricole aux orientations poursuivies par le mouvement, viabilité du projet d’installation...), les comités compétents décident d’acheter des terres ou d’accepter une donation ou un legs.
+                Une fois que toutes ces étapes ont été passées avec succès, Terre de Liens s’engage avec le(s) porteur(s) de projet.
+
+                Les terres qui sont acquises par Terre de Liens n’ont pas pour seul objet d’être "conservées" ou protégées : elles retrouvent une utilité sociale et économique, prennent leur place au sein d’un territoire et génèrent des dynamiques humaines et du lien social.
               </p>
 
             </article>
-            <div class="img_tom">
+            <div class="button_detail">
               <a href="">
                 <img src="http://placehold.it/300x300" alt="">
               </a>

@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 $primaryColor: #C00D0D;
 $secondaryColor: #ECE6CF;
 $marge: 32px;
 $typocorp: "nunito";
-$typotitle: "Bebas neue"
+$typotitle: "Bebas neue";
 
 
 html{
-  overflow-x: hidden;
+
   scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 article{
@@ -17,7 +23,7 @@ article{
   position: relative;
 }
 
-#tittle{
+.tittle{
 
   article{
     background-image:url("http://placehold.it/1280x720");
@@ -42,12 +48,32 @@ article{
 
 #header{
 
+    .topvideo{
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      width: 100vw;
+    }
+    .videobg{
+
+      width: 110vw;
+      z-index: 1;
+
+      video{
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+
+      }
+    }
   .header_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 6.25em;
     margin: 0 9em 0px 9em;
+    z-index: 9;
     img{
 
       margin-top: 5em;
@@ -56,7 +82,7 @@ article{
 
       width: 245px;
       height: 57px;
-      padding: 16px 20px;
+      padding: 16px 19px;
       background: #FFFFFF;
       color: $primaryColor;
       border: none;
@@ -67,32 +93,28 @@ article{
     }
 
   }
-.cta{
+  .cta{
     position: relative;
-  top: 15em;
-  #cta_intro{
+    top: 15em;
+    #cta_intro{
 
-  text-decoration: none;
-    p{
+      text-decoration: none;
+      p{
 
-      color: #FFFF;
-      font-size: 16px;
-      font-weight: 50;
-      font-family: $typocorp;
-      text-align: center;
+        color: #FFFF;
+        font-size: 16px;
+        font-weight: 50;
+        font-family: $typocorp;
+        text-align: center;
+      }
+
+
     }
-
-
   }
-}
 
 
-}
 
-#intro{
-  background-image:url("/src/image/introbg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+
 
 
   .content{
@@ -103,16 +125,16 @@ article{
     h1{
 
 
-    font-size:174px;
-    font-family: $typotitle;
-    color: #FFFF;
-    letter-spacing: 0.015em;
-    margin-top: 210px;
-    margin-bottom: 24px;
-    height: 166px;
+      font-size:174px;
+      font-family: $typotitle;
+      color: #FFFF;
+      letter-spacing: 0.015em;
+      margin-top: 210px;
+      margin-bottom: 24px;
+      height: 166px;
 
-  }
-  h2{
+    }
+    h2{
       font-size: 34px;
       letter-spacing: -0.03em;
       color: #FFFFFF;
@@ -120,14 +142,15 @@ article{
       font-weight: 100;
       margin-top: 8px;
 
-  }
+    }
   }
 }
 
+//Présentation de TOM//
 #tomprésentation{
   background-color: #FFFF;
 }
-#c2_tittle{
+#tom_explication{
 
   h2{
     font-size: 111px;
@@ -151,14 +174,82 @@ article{
 }
 
 
+//Fin de présentation tom//
 
-
-
+//CSS Communs des étapes//
 .step{
 
-  display: flex;
-  width: 200vw;
-  overflow: hidden;
+
+  width: 100vw;
+//début volet détails//
+  .button_detail{
+    position: absolute;
+    top: 67%;
+    left: 1%;
+    z-index: 21;
+    background-color: $primaryColor;
+    width:24px;
+    height: 24px;
+    cursor: pointer;
+
+  }
+
+  .details{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: $marge / 2;
+    width: 100vw;
+    height: 105vh;
+    transition: all 1s;
+    transform: translateX(110%);
+    color: black;
+    padding: $marge;
+    z-index: 99;
+
+      .backbutoon{
+      position: relative;
+      z-index: 99;
+    }
+
+      .contentdetails{
+
+      display: flex;
+      align-items: center;
+
+      .left{
+
+        width: 50vw;
+        height: 100vh;
+        .img_détails{
+          position: absolute;
+          top:10%;
+          left:10%;
+        }
+
+      }
+
+      .right{
+        width: 50vw;
+        height: 30vh;
+        padding-right: 10%;
+
+
+        h2{
+          font-size: 70px;
+          font-family: $typotitle;
+          color: $primaryColor;
+        }
+      }
+    }
+
+    &.open{
+      transform: translateX(0%);
+    }
+  }
+//Fin volet détails//
+
+//sidebar EXPLICATIVE//
 
   .button{
     position: absolute;
@@ -171,13 +262,14 @@ article{
     cursor: pointer;
     z-index: 21;
   }
+
   .sidebar{
     background-color: $primaryColor;
     position: absolute;
     top: 0;
     right: $marge / 2;
     width: 33%;
-    height: 105vh;
+    height: 100vh;
     transition: all 1s;
     transform: translateX(100%);
     opacity: 0%;
@@ -196,50 +288,10 @@ article{
     }
   }
 }
+//fin sidebar explicative//
 
+//Fin css communs step//
 
-.img_tom{
-  position: absolute;
-  top: 67%;
-  left: 1%;
-  z-index: 21;
-
-}
-.backbutoon{
-  position: relative;
-  z-index: 99;
-}
-
-.contentdetails{
-
-  display: flex;
-  align-items: center;
-
-  .left{
-
-    width: 50vw;
-    height: 100vh;
-
-  }
-
-  .right{
-    width: 50vw;
-    height: 30vh;
-    padding-right: 10%;
-
-    h2{
-      font-size: 70px;
-      font-family: $typotitle;
-      color: $primaryColor;
-    }
-  }
-}
-
-.img_détails{
-  position: absolute;
-  top:10%;
-  left:10%;
-}
 
 .first_step{
 
@@ -253,58 +305,58 @@ article{
   }
 }
 
-.container_timeline{
+
+
+//timeline//
+.timeline{
+  background-color: $secondaryColor;
   position: fixed;
-    z-index: 20;
+  top: 0;
+  left: -20px;
+  width: 200px;
+  height: 105vh;
+  transition: all 1s;
+  transform: translateX(-100%);
+  color: white;
+  padding: $marge;
+  z-index: 999;
 
-    .button_timeline{
-      position: absolute;
-      background-color: $secondaryColor;
-      width: 100px;
-      height: 110px;
-      left: 100%;
-      top: 50%;
-      transform: translateY(-48px) translateX(-50%);
-      border-radius: 50%;
-      cursor: pointer;
 
-      }
-  .timeline{
-    background-color: $secondaryColor;
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 200px;
-    height: 105vh;
-    transition: all 1s;
-    transform: translateX(-100%);
-    color: white;
-    padding: $marge;
-
-    H3{
-      color: $primaryColor;
-      font-size: 34px;
-      font-family: $typotitle;
-      margin-bottom: $marge;
-    }
-    &.open{
-      transform: translateX(10%);
-
-    }
-    li{
-      position: relative;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      left: 40%;
-      margin-bottom: 80px;
-      background-color: $primaryColor;
-    }
-    img{
-      position: absolute;
-      left: 40%;
-      top: 6px;
-
-    }
-    }
+  H3{
+    color: $primaryColor;
+    font-size: 34px;
+    font-family: $typotitle;
+    margin-bottom: $marge;
   }
+  .button_timeline{
+    position: absolute;
+    background-color: $secondaryColor;
+    width: 100px;
+    height: 110px;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-48px) translateX(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+
+  }
+  &.open{
+    transform: translateX(10%);
+
+  }
+  li{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 40%;
+    margin-bottom: 80px;
+    background-color: $primaryColor;
+  }
+  img{
+    position: absolute;
+    left: 40%;
+    top: 6px;
+
+  }
+}
