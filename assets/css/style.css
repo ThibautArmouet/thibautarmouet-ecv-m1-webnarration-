@@ -6,6 +6,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background-color: #fbf7f4;
 }
 
 article {
@@ -28,6 +29,59 @@ article {
   font-family: "Bebas neue";
 }
 
+#header .button_detail {
+  position: absolute;
+  top: 67%;
+  left: 1%;
+  z-index: 21;
+  background-color: #C00D0D;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+#header .details {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  width: 100vw;
+  height: 105vh;
+  transition: all 1s;
+  transform: translateX(110%);
+  color: black;
+  padding: 32px;
+  z-index: 99;
+}
+#header .details .backbutoon {
+  position: relative;
+  z-index: 99;
+}
+#header .details .contentdetails {
+  display: flex;
+  align-items: center;
+}
+#header .details .contentdetails .left {
+  width: 50vw;
+  height: 100vh;
+}
+#header .details .contentdetails .left .img_détails {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+#header .details .contentdetails .right {
+  width: 50vw;
+  height: 30vh;
+  padding-right: 10%;
+}
+#header .details .contentdetails .right h2 {
+  font-size: 70px;
+  font-family: "Bebas neue";
+  color: #C00D0D;
+}
+#header .details.open {
+  transform: translateX(0%);
+}
 #header .topvideo {
   position: absolute;
   z-index: 9;
@@ -66,6 +120,14 @@ article {
   font-size: 16px;
   font-family: "nunito";
   margin-top: 5em;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+#header .header_content button:hover {
+  transform: scale(0.9);
+}
+#header .header_content button:focus {
+  outline: none;
 }
 #header .cta {
   position: relative;
@@ -105,14 +167,11 @@ article {
   margin-top: 8px;
 }
 
-#tomprésentation {
-  background-color: #FFFF;
-}
-
 #tom_explication h2 {
   font-size: 111px;
   font-family: "Bebas neue";
   margin: 66px 0 16px 145px;
+  color: #C00D0D;
 }
 #tom_explication p {
   width: 617px;
@@ -207,10 +266,21 @@ article {
   z-index: 21;
 }
 .step .sidebar H3 {
+  margin-top: 32px;
   color: #ECE6CF;
   font-size: 34px;
   font-family: "Bebas neue";
   margin-bottom: 32px;
+}
+.step .sidebar li {
+  font-family: "nunito";
+  font-size: 1.2em;
+  font-weight: 200;
+}
+.step .sidebar p {
+  font-family: "nunito";
+  font-size: 1.2em;
+  font-weight: 200;
 }
 .step .sidebar.open {
   transform: translateX(4%);

@@ -5,6 +5,7 @@ $secondaryColor: #ECE6CF;
 $marge: 32px;
 $typocorp: "nunito";
 $typotitle: "Bebas neue";
+$colorbody:#fbf7f4;
 
 
 html{
@@ -14,6 +15,7 @@ html{
 
 body{
   overflow-x: hidden;
+  background-color: $colorbody
 }
 
 article{
@@ -47,6 +49,73 @@ article{
 }
 
 #header{
+  .button_detail{
+    position: absolute;
+    top: 67%;
+    left: 1%;
+    z-index: 21;
+    background-color: $primaryColor;
+    width:24px;
+    height: 24px;
+    cursor: pointer;
+
+
+  }
+
+  .details{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: $marge / 2;
+    width: 100vw;
+    height: 105vh;
+    transition: all 1s;
+    transform: translateX(110%);
+    color: black;
+    padding: $marge;
+    z-index: 99;
+
+      .backbutoon{
+      position: relative;
+      z-index: 99;
+    }
+
+      .contentdetails{
+
+      display: flex;
+      align-items: center;
+
+      .left{
+
+        width: 50vw;
+        height: 100vh;
+        .img_détails{
+          position: absolute;
+          top:10%;
+          left:10%;
+        }
+
+      }
+
+      .right{
+        width: 50vw;
+        height: 30vh;
+        padding-right: 10%;
+
+
+        h2{
+          font-size: 70px;
+          font-family: $typotitle;
+          color: $primaryColor;
+        }
+      }
+    }
+
+    &.open{
+      transform: translateX(0%);
+    }
+  }
+
 
     .topvideo{
       position: absolute;
@@ -66,6 +135,7 @@ article{
         object-position: center;
 
       }
+
     }
   .header_content{
     display: flex;
@@ -90,6 +160,17 @@ article{
       font-size: 16px;
       font-family: $typocorp;
       margin-top: 5em;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(0.9);
+      }
+
+      &:focus{
+    outline: none;
+  }
+
     }
 
   }
@@ -106,6 +187,7 @@ article{
         font-weight: 50;
         font-family: $typocorp;
         text-align: center;
+
       }
 
 
@@ -148,7 +230,7 @@ article{
 
 //Présentation de TOM//
 #tomprésentation{
-  background-color: #FFFF;
+
 }
 #tom_explication{
 
@@ -156,6 +238,7 @@ article{
     font-size: 111px;
     font-family: $typotitle;
     margin:66px 0 16px 145px;
+    color: $primaryColor;
 
   }
 
@@ -191,6 +274,7 @@ article{
     width:24px;
     height: 24px;
     cursor: pointer;
+
 
   }
 
@@ -277,10 +361,23 @@ article{
     padding: $marge;
     z-index: 21;
     H3{
+      margin-top: $marge;
       color: #ECE6CF;
       font-size: 34px;
       font-family: $typotitle;
       margin-bottom: $marge;
+    }
+
+    li{
+      font-family: $typocorp;
+      font-size : 1.2em;
+      font-weight: 200;
+    }
+
+    p{
+      font-family: $typocorp;
+      font-size : 1.2em;
+      font-weight: 200;
     }
     &.open{
       transform: translateX(4%);
