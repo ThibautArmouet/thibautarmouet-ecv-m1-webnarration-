@@ -487,15 +487,22 @@ article{
 //début volet détails//
   .button_detail{
     position: absolute;
-    top: 47%;
+    top: 66%;
     left: 1%;
     z-index: 21;
     width:24px;
     height: 24px;
     cursor: pointer;
 
+img{
+width: 300px;
+height: auto;
+
+}
 
   }
+
+
 
   .details{
 
@@ -847,7 +854,7 @@ article{
 .seventh_step{
 
   .background{
-    background-image: url('/src/image/tour.jpg');
+    background-image: url('/src/image/plaine.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2515,7 +2522,7 @@ img{
   .seventh_step{
 
     .background{
-      background-image: url('/src/image/tour.jpg');
+      background-image: url('/src/image/plaine.png');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
