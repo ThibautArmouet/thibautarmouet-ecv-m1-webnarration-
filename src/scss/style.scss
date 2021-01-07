@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 $primaryColor: #C00D0D;
+$secondaryColor: #ECE6CF;
 $marge: 32px;
 $typocorp: "nunito";
+$typotitle: "Bebas neue";
+$colorbody:#fbf7f4;
 
 
 html{
-  overflow-x: hidden;
+
   scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: $colorbody;
 }
 
 article{
@@ -15,7 +25,144 @@ article{
   position: relative;
 }
 
-#tittle{
+.tittle{
+
+#third{
+  background-image:url("/src/image/technique.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  img{
+
+    width: 370px;
+    height: 20px;
+    position: relative;
+    bottom: -34em;
+    left:6%;
+  }
+}
+  #first{
+
+    background-image:url("/src/image/first.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  img{
+
+    width: 500px;
+    height: 20px;
+    position: relative;
+    bottom: -34em;
+    left:6%;
+  }
+
+  }
+
+  #fourth{
+
+    background-image:url("/src/image/dossier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    img{
+
+      width: 1000px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+  }
+
+  #fifth{
+
+    background-image:url("/src/image/don .jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    img{
+
+      width: 700px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+  }
+
+  #second{
+
+    background-image:url("/src/image/rencontre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    img{
+
+      width: 750px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+
+  }
+
+  #sixth{
+
+    background-image:url("/src/image/engage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    img{
+
+      width: 700px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+
+  }
+
+  #seventh{
+
+    background-image:url("/src/image/tour.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    img{
+
+      width: 580px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+
+  }
+
+
+  #eight{
+
+    background-image:url("/src/image/bail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    img{
+
+      width: 870px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+
+  }
 
   article{
     background-image:url("http://placehold.it/1280x720");
@@ -29,8 +176,10 @@ article{
       position: relative;
       bottom: -5em;
       left:6%;
-      width: 791px;
-      font-family: "Bebas neue";
+      width: 1280px;
+      font-family: $typotitle;
+      color: $colorbody;
+      line-height: 1.2;
 
     }
 
@@ -39,14 +188,182 @@ article{
 }
 
 #header{
+  .button_detail{
+    position: absolute;
+    top: 67%;
+    left: 1%;
+    z-index: 21;
+    width:24px;
+    height: 24px;
+    cursor: pointer;
 
 
+  }
+
+  .details{
+    position: absolute;
+    top: 0;
+    right: $marge / 2;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    transform: translateX(110%);
+    color: black;
+    background-color: $colorbody;
+
+    z-index: 99;
+
+      .backbutoon{
+      position: absolute;
+      z-index: 99;
+      left: 5%;
+      top : 5%;
+      font-family : $typocorp;
+      color:brown;
+    }
+
+      .contentdetails{
+
+      display: flex;
+      align-items: center;
+
+      .left{
+
+        width: 50vw;
+        height: 100vh;
+        background-color: #ECE6CF;
+
+
+
+        .img_détails{
+          height: 100vh;
+          width: auto;
+          padding: 0;
+          margin-left:  5%;
+
+
+        }
+
+      }
+
+      #ferme1{
+        width: 50vw;
+        height: 100vh;
+        padding-right: 10%;
+        background-image: url("/src/image/font.png");
+        background-size: cover;
+        background-position: center center;
+        position : absolute;
+        z-index: 1;
+
+        &.open{
+          z-index: 99;
+        }
+      }
+
+      #ferme2{
+        width: 50vw;
+        height: 100vh;
+        padding-right: 10%;
+        background-image: url("/src/image/font.png");
+        background-size: cover;
+        background-position: center center;
+        position : absolute;
+        z-index: 1;
+
+        &.open{
+          z-index: 99;
+        }
+}
+        #ferme3{
+          width: 50vw;
+          height: 100vh;
+          padding-right: 10%;
+          background-image: url("/src/image/font.png");
+          background-size: cover;
+          background-position: center center;
+          position : absolute;
+          z-index: 1;
+
+          &.open{
+            z-index: 99;
+          }
+}
+          #ferme4{
+            width: 50vw;
+            height: 100vh;
+            padding-right: 10%;
+            background-image: url("/src/image/moulin.png");
+            background-size: cover;
+            background-position: center center;
+            position : absolute;
+            z-index: 1;
+
+            &.open{
+              z-index: 99;
+            }
+      }
+
+      .right{
+        width: 50vw;
+        height: 100vh;
+        padding-right: 10%;
+
+
+
+        h2{
+          font-size: 70px;
+          font-family: $typotitle;
+          color: white;
+          margin-left: 15%;
+          margin-top: 10%;
+        }
+
+        p{
+          font-size: 20px;
+          font-family: $typocorp;
+          color: white;
+          font-weight: lighter;
+          padding-right: 20%;
+          margin-left: 15%;
+          margin-top: 30%;
+        }
+      }
+    }
+
+    &.open{
+      transform: translateX(1%);
+    }
+  }
+
+
+    .topvideo{
+      position: absolute;
+      z-index: 9;
+      top: 0;
+      width: 100vw;
+    }
+    .videobg{
+
+      width: 110vw;
+      z-index: 1;
+
+      video{
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+
+      }
+
+    }
   .header_content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 6.25em;
     margin: 0 9em 0px 9em;
+    z-index: 9;
     img{
 
       margin-top: 5em;
@@ -55,7 +372,7 @@ article{
 
       width: 245px;
       height: 57px;
-      padding: 16px 20px;
+      padding: 16px 19px;
       background: #FFFFFF;
       color: $primaryColor;
       border: none;
@@ -63,35 +380,43 @@ article{
       font-size: 16px;
       font-family: $typocorp;
       margin-top: 5em;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(0.9);
+      }
+
+      &:focus{
+    outline: none;
+  }
+
     }
 
   }
-.cta{
+  .cta{
     position: relative;
-  top: 15em;
-  #cta_intro{
+    top: 15em;
+    #cta_intro{
 
-  text-decoration: none;
-    p{
+      text-decoration: none;
+      p{
 
-      color: #FFFF;
-      font-size: 16px;
-      font-weight: 50;
-      font-family: $typocorp;
-      text-align: center;
+        color: #FFFF;
+        font-size: 16px;
+        font-weight: 50;
+        font-family: $typocorp;
+        text-align: center;
+
+      }
+
+
     }
-
-
   }
-}
 
 
-}
 
-#intro{
-  background-image:url("/src/image/introbg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+
 
 
   .content{
@@ -102,16 +427,16 @@ article{
     h1{
 
 
-    font-size:174px;
-    font-family: "Bebas neue";
-    color: #FFFF;
-    letter-spacing: 0.015em;
-    margin-top: 210px;
-    margin-bottom: 24px;
-    height: 166px;
+      font-size:174px;
+      font-family: $typotitle;
+      color: #FFFF;
+      letter-spacing: 0.015em;
+      margin-top: 210px;
+      margin-bottom: 24px;
+      height: 166px;
 
-  }
-  h2{
+    }
+    h2{
       font-size: 34px;
       letter-spacing: -0.03em;
       color: #FFFFFF;
@@ -119,19 +444,21 @@ article{
       font-weight: 100;
       margin-top: 8px;
 
-  }
+    }
   }
 }
 
+//Présentation de TOM//
 #tomprésentation{
-  background-color: #FFFF;
+
 }
-#c2_tittle{
+#tom_explication{
 
   h2{
     font-size: 111px;
-    font-family: "Bebas neue";
+    font-family: $typotitle;
     margin:66px 0 16px 145px;
+    color: $primaryColor;
 
   }
 
@@ -150,41 +477,175 @@ article{
 }
 
 
+//Fin de présentation tom//
 
-
-
+//CSS Communs des étapes//
 .step{
 
-  display: flex;
-  width: 200vw;
-  overflow: hidden;
+
+  width: 100vw;
+//début volet détails//
+  .button_detail{
+    position: absolute;
+    top: 47%;
+    left: 1%;
+    z-index: 21;
+    width:24px;
+    height: 24px;
+    cursor: pointer;
+
+
+  }
+
+  .details{
+
+    position: absolute;
+    top: 0;
+    right: $marge / 2;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    transform: translateX(110%);
+    color: black;
+    padding: $marge;
+    z-index: 99;
+    background-image: url('/src/image/fond.png');
+    background-color: $colorbody;
+
+    iframe{
+
+      margin-left:9%;
+      margin-top: 2%;
+      border-radius: 15px;
+    }
+
+      .backbutoon{
+      position: relative;
+      z-index: 99;
+      left: 5%;
+      font-weight: bolder;
+      font-family: $typocorp;
+      color: brown;
+      text-transform: uppercase;
+    }
+
+      .contentdetails{
+
+      display: flex;
+      align-items: center;
+      height: 90vh;
+
+      iframe{
+
+        margin: auto;
+        border-radius: 15px;
+      }
+
+      .left{
+
+        width: 50vw;
+        height: 100vh;
+
+        .img_détails{
+          position: absolute;
+          top:10%;
+          left:10%;
+          height: 80vh;
+          width: auto;
+          border-radius: 15px;
+        }
+
+      }
+
+
+
+      .right{
+        width: 50vw;
+        height: 30vh;
+        padding-right: 10%;
+
+        p{
+
+          font-size: 18px;
+          font-family: $typocorp;
+          font-weight: normal;
+        }
+
+
+        h3{
+          font-size: 24px;
+          font-family: $typocorp;
+          color: brown;
+          opacity: 0.80;
+          font-style: italic;
+          font-weight: lighter;
+          height: 24px;
+          margin-bottom: 32px;
+        }
+
+        h2{
+          font-size: 70px;
+          font-family: $typotitle;
+          color: $primaryColor;
+          height: 70px;
+          margin-bottom: 8px;
+        }
+
+
+      }
+    }
+
+    &.open{
+      transform: translateX(0%);
+    }
+  }
+//Fin volet détails//
+
+//sidebar EXPLICATIVE//
+
   .button{
     position: absolute;
-    background-color: $primaryColor;
+
     width:24px;
     height: 24px;
     left: 50%;
     top: 50%;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 21;
   }
+
   .sidebar{
     background-color: $primaryColor;
     position: absolute;
     top: 0;
     right: $marge / 2;
     width: 33%;
-    height: 105vh;
+    height: 100vh;
     transition: all 1s;
     transform: translateX(100%);
     opacity: 0%;
     color: white;
     padding: $marge;
+    z-index: 21;
     H3{
+      margin-top: $marge;
       color: #ECE6CF;
       font-size: 34px;
-      font-family: "Bebas neue";
+      font-family: $typotitle;
       margin-bottom: $marge;
+    }
+
+    li{
+      font-family: $typocorp;
+      font-size : 1.2em;
+      font-weight: 200;
+    }
+
+    p{
+      font-family: $typocorp;
+      font-size : 1.2em;
+      font-weight: 200;
     }
     &.open{
       transform: translateX(4%);
@@ -192,56 +653,2100 @@ article{
     }
   }
 }
+//fin sidebar explicative//
 
+//Fin css communs step//
 
-.img_tom{
-  position: absolute;
-  top: 67%;
-  left: 1%;
-}
+.nine_step{
 
-.contentdetails{
+  .background{
+    background-image: url('/src/image/champagne.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-  display: flex;
-  align-items: center;
+    ;
 
-  .left{
+  }
+  .button{
 
-    width: 50vw;
-    height: 100vh;
+    position: absolute;
+
+    width: 320px;
+    height: 140px;
+    left: 45%;
+    top: 44%;
+    cursor: pointer;
+    z-index: 21;
 
   }
 
-  .right{
-    width: 50vw;
-    height: 30vh;
-    padding-right: 10%;
 
-    h2{
-      font-size: 70px;
-      font-family: "Bebas neue";
-      color: $primaryColor;
-    }
-  }
 }
-
-.img_détails{
-  position: absolute;
-  top:10%;
-  left:10%;
-}
-
 .first_step{
 
   .background{
-    background-image: url('/src/image/premiere.png');
+    background-image: url('/src/image/rencontre.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center
+    background-position: left;
+
     ;
 
   }
 
+  .button{
+
+    position: absolute;
+    width: 120px;
+    height: 140px;
+    left: 250px;
+    top: 48%;
+
+    cursor: pointer;
+    z-index: 21;
+
+  }
+}
+
+.second_step{
+
+  .background{
+    background-image: url('/src/image/terre_vendre.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+  .button{
+
+    position: absolute;
+
+    width: 120px;
+    height: 140px;
+    left: 48%;
+    top: 48%;
+
+    cursor: pointer;
+    z-index: 21;
+
+  }
+}
+
+.fourth_step{
+
+  .background{
+    background-image: url('/src/image/etude.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+  .button{
+
+    position: absolute;
+
+    width: 120px;
+    height: 140px;
+    left: 45%;
+    top: 48%;
+
+    cursor: pointer;
+    z-index: 21;
+
+  }
+}
+
+.third_step{
+
+  .background{
+    background-image: url('/src/image/faisabilité.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+
+  .button{
+
+    position: absolute;
+
+    width: 120px;
+    height: 140px;
+    left: 48%;
+    top: 52%;
+
+    cursor: pointer;
+    z-index: 21;
+
+  }
+
+}
+
+.fifth_step{
+
+  .background{
+    background-image: url('/src/image/don.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+  .button{
+
+    position: absolute;
+
+    width: 520px;
+    height: 140px;
+    left: 35%;
+    top: 24%;
+
+    cursor: pointer;
+    z-index: 21;
+
+  }
 
 
+}
+
+
+.sixth_step{
+
+  .background{
+    background-image: url('/src/image/engageilu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+  .button{
+
+    position: absolute;
+
+    width: 320px;
+    height: 140px;
+    left: 45%;
+    top: 44%;
+    cursor: pointer;
+    z-index: 21;
+
+  }
+
+
+}
+.seventh_step{
+
+  .background{
+    background-image: url('/src/image/tour.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+  .button{
+
+    position: absolute;
+
+    width: 320px;
+    height: 140px;
+    left: 45%;
+    top: 44%;
+    cursor: pointer;
+    z-index: 21;
+
+  }
+
+
+}
+.eight_step{
+
+  .background{
+    background-image: url('/src/image/signature.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    ;
+
+  }
+
+  .button{
+
+    position: absolute;
+    width: 320px;
+    height: 140px;
+    left: 35%;
+    top: 70%;
+
+    cursor: pointer;
+    z-index: 21;
+
+  }
+
+}
+
+
+//timeline//
+.timeline{
+  background-color: $secondaryColor;
+  position: fixed;
+  top: 0;
+  left: -20px;
+  width: 200px;
+  height: 105vh;
+  transition: all 1s;
+  transform: translateX(-100%);
+  color: white;
+  padding: $marge;
+  z-index: 999;
+
+
+  H3{
+    color: $primaryColor;
+    font-size: 34px;
+    font-family: $typotitle;
+    margin-bottom: $marge;
+  }
+  .button_timeline{
+    position: absolute;
+    background-color: $secondaryColor;
+    width: 100px;
+    height: 110px;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-48px) translateX(-50%);
+    border-radius: 50%;
+    cursor: pointer;
+
+  }
+  &.open{
+    transform: translateX(10%);
+
+  }
+  li{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 40%;
+    margin-bottom: 80px;
+    background-color: $primaryColor;
+  }
+  img{
+    position: absolute;
+    left: 40%;
+    top: 7px;
+
+  }
+}
+
+
+.content_ferme{
+  width: 50vw;
+  height: 100vh;
+
+}
+
+.vague{
+  position: absolute;
+  height: 100vh;
+  width: auto;
+  top: 0;
+  left: -8%;
+
+}
+
+
+@media screen and (max-width: 1024px){
+
+
+
+  #header{
+    .button_detail{
+      position: absolute;
+      top: 67%;
+      left: 1%;
+      z-index: 21;
+      width:24px;
+      height: 24px;
+      cursor: pointer;
+
+
+    }
+
+    .details{
+      position: absolute;
+      top: 0;
+      right: $marge / 2;
+      width: 100vw;
+      height: 100vh;
+      transition: all 1s;
+      transform: translateX(120%);
+      color: black;
+      background-color: $colorbody;
+
+      z-index: 99;
+
+        .backbutoon{
+        position: absolute;
+        z-index: 99;
+      }
+
+        .contentdetails{
+
+        display: flex;
+        align-items: center;
+
+        .left{
+
+          width: 50%;
+          height: 100vh;
+          background-color: #ECE6CF;
+
+
+
+          .img_détails{
+            margin-top: 10%;
+            height: 80vh;
+            width: auto;
+            padding: 0;
+            margin-left:-20%;
+
+
+          }
+
+        }
+
+        #ferme1{
+          width: 50vw;
+          height: 100vh;
+          padding-right: 10%;
+          background-image: url("/src/image/font.png");
+          background-size: cover;
+          background-position: center center;
+          position : absolute;
+          z-index: 1;
+
+          &.open{
+            z-index: 99;
+          }
+        }
+
+        #ferme2{
+          width: 50vw;
+          height: 100vh;
+          padding-right: 10%;
+          background-image: url("/src/image/font.png");
+          background-size: cover;
+          background-position: center center;
+          position : absolute;
+          z-index: 1;
+
+          &.open{
+            z-index: 99;
+          }
+  }
+          #ferme3{
+            width: 50vw;
+            height: 100vh;
+            padding-right: 10%;
+            background-image: url("/src/image/font.png");
+            background-size: cover;
+            background-position: center center;
+            position : absolute;
+            z-index: 1;
+
+            &.open{
+              z-index: 99;
+            }
+  }
+            #ferme4{
+              width: 50vw;
+              height: 100vh;
+              padding-right: 10%;
+              background-image: url("/src/image/moulin.png");
+              background-size: cover;
+              background-position: center center;
+              position : absolute;
+              z-index: 1;
+
+              &.open{
+                z-index: 99;
+              }
+        }
+
+        .right{
+          width: 50vw;
+          height: 100vh;
+          padding-right: 10%;
+
+
+
+          h2{
+            font-size: 50px;
+            font-family: $typotitle;
+            color: white;
+            margin-left: 15%;
+            margin-top: 10%;
+          }
+
+          p{
+            font-size: 16px;
+            font-family: $typocorp;
+            color: white;
+            font-weight: lighter;
+            padding-right: 20%;
+            margin-left: 15%;
+            margin-top: 30%;
+          }
+        }
+      }
+
+      &.open{
+        transform: translateX(2.1%);
+      }
+    }
+
+
+      .topvideo{
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        width: 100vw;
+      }
+      .videobg{
+
+        width: 110vw;
+        z-index: 1;
+
+        video{
+          height: 100vh;
+          width: 100vw;
+          object-fit: cover;
+          object-position: center;
+
+        }
+
+      }
+    .header_content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.25em;
+      margin: 0 9em 0px 9em;
+      z-index: 9;
+      img{
+
+        margin-top: 5em;
+      }
+      button{
+
+        width: 245px;
+        height: 57px;
+        padding: 16px 19px;
+        background: #FFFFFF;
+        color: $primaryColor;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: $typocorp;
+        margin-top: 5em;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+          transform: scale(0.9);
+        }
+
+        &:focus{
+      outline: none;
+    }
+
+      }
+
+    }
+    .cta{
+      position: relative;
+      top: 15em;
+      #cta_intro{
+
+        text-decoration: none;
+        p{
+
+          color: #FFFF;
+          font-size: 16px;
+          font-weight: 50;
+          font-family: $typocorp;
+          text-align: center;
+
+        }
+
+
+      }
+    }
+
+
+
+
+
+
+    .content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1{
+
+
+        font-size:124px;
+        font-family: $typotitle;
+        color: #FFFF;
+        letter-spacing: 0.015em;
+        margin-top: 210px;
+        margin-bottom: 8px;
+        height: 146px;
+
+      }
+      h2{
+        font-size: 34px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        font-family: $typocorp;
+        font-weight: 100;
+        margin-top: 8px;
+
+      }
+
+
+    }
+  }
+
+
+  .tittle{
+
+  #third{
+    background-image:url("/src/image/technique.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img{
+
+      width: 310px;
+      height: 20px;
+      position: relative;
+      bottom: -33.4em;
+      left:6%;
+    }
+  }
+    #first{
+
+      background-image:url("/src/image/first.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    img{
+
+      width: 250px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+
+    }
+
+    #fourth{
+
+      background-image:url("/src/image/dossier.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      img{
+
+        width: 1000px;
+        height: 20px;
+        position: relative;
+        bottom: -34em;
+        left:6%;
+      }
+    }
+
+    #fifth{
+
+      background-image:url("/src/image/don .jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      img{
+
+        width: 580px;
+        height: 20px;
+        position: relative;
+        bottom: -33.4em;
+        left:6%;
+      }
+    }
+
+    #second{
+
+      background-image:url("/src/image/rencontre.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 630px;
+        height: 20px;
+        position: relative;
+        bottom: -33em;
+        left:6%;
+      }
+
+    }
+
+    #sixth{
+
+      background-image:url("/src/image/engage.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 570px;
+        height: 20px;
+        position: relative;
+        bottom: -33em;
+        left:6%;
+      }
+
+    }
+
+    #seventh{
+
+      background-image:url("/src/image/tour.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 480px;
+        height: 20px;
+        position: relative;
+        bottom: -34em;
+        left:6%;
+      }
+
+    }
+
+
+    #eight{
+
+      background-image:url("/src/image/bail.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 700px;
+        height: 20px;
+        position: relative;
+        bottom: -34em;
+        left:6%;
+      }
+
+    }
+
+    article{
+      background-image:url("http://placehold.it/1280x720");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+      .tittle_content{
+
+        font-size: 91px;
+        position: relative;
+        bottom: -6em;
+        left:6%;
+        width: 1280px;
+        font-family: $typotitle;
+        color: $colorbody;
+        line-height: 1.2;
+
+      }
+
+    }
+
+  }
+
+  .step{
+
+
+    width: 100vw;
+  //début volet détails//
+    .button_detail{
+      position: absolute;
+      top: 54%;
+      left: 1%;
+      z-index: 21;
+
+      width:24px;
+      height: 24px;
+      cursor: pointer;
+
+img{
+
+  width:400px;
+  height: auto;
+}
+
+    }
+
+    .details{
+
+      position: absolute;
+      top: 0;
+      right: $marge / 2;
+      width: 100vw;
+      height: 100vh;
+      transition: all 1s;
+      transform: translateX(110%);
+      color: black;
+      padding: $marge;
+      z-index: 99;
+      background-image: url('/src/image/fond.png');
+      background-color: $colorbody;
+
+      iframe{
+
+        width:700px;
+        height: 800px;
+        margin-left:2%;
+        margin-top: 2%;
+        border-radius: 15px;
+      }
+
+        .backbutoon{
+        position: relative;
+        z-index: 99;
+        left: 5%;
+        font-weight: bolder;
+        font-family: $typocorp;
+        color: brown;
+        text-transform: uppercase;
+      }
+
+        .contentdetails{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 90vh;
+
+        iframe{
+
+          margin: auto;
+          border-radius: 15px;
+        }
+
+        .left{
+
+          width: 40vw;
+          height: 100vh;
+
+          .img_détails{
+            position: absolute;
+            top:20%;
+            left:5%;
+            height: auto;
+            width: 45vw;
+            border-radius: 15px;
+          }
+
+        }
+
+
+
+        .right{
+          width: 40vw;
+          height: 65vh;
+          padding-right: 1%;
+
+
+          p{
+
+            font-size: 16px;
+            font-family: $typocorp;
+            font-weight: normal;
+          }
+
+
+          h3{
+            font-size: 18px;
+            font-family: $typocorp;
+            color: brown;
+            opacity: 0.80;
+            font-style: italic;
+            font-weight: lighter;
+            height: 24px;
+            margin-bottom: 32px;
+          }
+
+          h2{
+            font-size: 40px;
+            font-family: $typotitle;
+            color: $primaryColor;
+            height: 40px;
+            margin-bottom: 8px;
+          }
+
+
+        }
+      }
+
+      &.open{
+        transform: translateX(2%);
+      }
+    }
+  //Fin volet détails//
+
+  //sidebar EXPLICATIVE//
+
+    .button{
+      position: absolute;
+
+      width:24px;
+      height: 24px;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 21;
+    }
+
+    .sidebar{
+      background-color: $primaryColor;
+      position: absolute;
+      top: 0;
+      right: $marge / 2;
+      width: 40%;
+      height: 100vh;
+      transition: all 1s;
+      transform: translateX(100%);
+      opacity: 0%;
+      color: white;
+      padding: $marge;
+      z-index: 21;
+
+      H3{
+        margin-top: $marge;
+        color: #ECE6CF;
+        font-size: 24px;
+        font-family: $typotitle;
+        margin-bottom: $marge;
+        overflow-y: scroll;
+      }
+
+      ul{
+
+        position: relative;
+        top: -65%;
+      }
+
+      li{
+        font-family: $typocorp;
+        font-size : 16px;
+        font-weight: 200;
+      }
+
+      p{
+        font-family: $typocorp;
+        font-size : 16px;
+        font-weight: 200;
+        height: 72vh;
+        overflow: scroll;
+
+      }
+      &.open{
+        transform: translateX(6%);
+        opacity: 100%;
+      }
+    }
+  }
+
+  .sixth_step{
+
+    .background{
+      background-image: url('/src/image/engageilu.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 320px;
+      height: 140px;
+      left: 45%;
+      top: 44%;
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+
+  }
+
+  .seventh_step{
+
+    .background{
+      background-image: url('/src/image/tour.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 320px;
+      height: 140px;
+      left: 45%;
+      top: 44%;
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+
+  }
+
+  .nine_step{
+
+    .background{
+      background-image: url('/src/image/champagne.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 320px;
+      height: 140px;
+      left: 45%;
+      top: 44%;
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+
+  }
+  .first_step{
+
+    .background{
+      background-image: url('/src/image/rencontre.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+
+      ;
+
+    }
+
+    .button{
+
+      position: absolute;
+      width: 120px;
+      height: 140px;
+      left: 250px;
+      top: 48%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .second_step{
+
+    .background{
+      background-image: url('/src/image/terre_vendre.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 120px;
+      height: 140px;
+      left: 48%;
+      top: 48%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .fourth_step{
+
+    .background{
+      background-image: url('/src/image/etude.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 120px;
+      height: 140px;
+      left: 45%;
+      top: 48%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .third_step{
+
+    .background{
+      background-image: url('/src/image/faisabilité.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+
+    .button{
+
+      position: absolute;
+
+      width: 120px;
+      height: 140px;
+      left: 48%;
+      top: 52%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+  }
+
+  .fifth_step{
+
+    .background{
+      background-image: url('/src/image/don.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 520px;
+      height: 140px;
+      left: 35%;
+      top: 24%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .eight_step{
+
+    .background{
+      background-image: url('/src/image/signature.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+
+    .button{
+
+      position: absolute;
+      width: 320px;
+      height: 140px;
+      left: 35%;
+      top: 70%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+  }
+
+  #tom_explication{
+
+    h2{
+      font-size: 90px;
+      font-family: $typotitle;
+      margin:66px 0 16px 90px;
+      color: $primaryColor;
+
+
+    }
+
+    p{
+      width: 617px;
+      font-size: 20px;
+      margin:0 0 0 90px;
+      font-family: $typocorp;
+    }
+
+    .img_content{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+
+  }
+}
+
+@media screen and (max-width: 760px){
+
+
+
+  #header{
+    .button_detail{
+      position: absolute;
+      top: 67%;
+      left: 1%;
+      z-index: 21;
+      width:24px;
+      height: 24px;
+      cursor: pointer;
+
+
+    }
+
+    .details{
+      position: absolute;
+      top: 0;
+      right: $marge / 2;
+      width: 100vw;
+      height: 100vh;
+      transition: all 1s;
+      transform: translateX(120%);
+      color: black;
+      background-color: $colorbody;
+
+      z-index: 99;
+
+        .backbutoon{
+        position: absolute;
+        z-index: 99;
+      }
+
+        .contentdetails{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .left{
+
+          width: 100%;
+          height: 50vh;
+          background-color: #ECE6CF;
+
+
+
+          .img_détails{
+            margin-top: 10%;
+            height: 50vh;
+            width: auto;
+            padding: 0;
+            margin-left:24%;
+
+
+          }
+
+        }
+
+        #ferme1{
+          width: 100%;
+          height: 50vh;
+          padding-right: 10%;
+          background-image: url("/src/image/font.png");
+          background-size: cover;
+          background-position: center center;
+          position : absolute;
+          z-index: 1;
+
+          &.open{
+            z-index: 99;
+          }
+        }
+
+        #ferme2{
+          width: 100vw;
+          height: 50vh;
+
+          background-image: url("/src/image/font.png");
+          background-size: cover;
+          background-position: center center;
+          position : absolute;
+          z-index: 1;
+
+          &.open{
+            z-index: 99;
+          }
+  }
+          #ferme3{
+            width: 100vw;
+            height: 50vh;
+            padding-right: 10%;
+            background-image: url("/src/image/font.png");
+            background-size: cover;
+            background-position: center center;
+            position : absolute;
+            z-index: 1;
+
+            &.open{
+              z-index: 99;
+            }
+  }
+            #ferme4{
+              width: 100vw;
+              height: 50vh;
+              padding-right: 10%;
+              background-image: url("/src/image/moulin.png");
+              background-size: cover;
+              background-position: center center;
+              position : absolute;
+              z-index: 1;
+
+              &.open{
+                z-index: 99;
+              }
+        }
+
+        .right{
+          width: 100vw;
+          height: 50vh;
+          padding-right: 10%;
+
+
+
+          h2{
+            font-size: 50px;
+            font-family: $typotitle;
+            color: white;
+            margin-left: 15%;
+            margin-top: 10%;
+          }
+
+          p{
+            font-size: 16px;
+            width: 80vw;
+            font-family: $typocorp;
+            color: white;
+            font-weight: lighter;
+            padding-right: 20%;
+            margin-left: 15%;
+            margin-top: 10%;
+          }
+        }
+      }
+
+      &.open{
+        transform: translateX(2.1%);
+      }
+    }
+
+
+      .topvideo{
+        position: absolute;
+        z-index: 9;
+        top: 0;
+        width: 100vw;
+      }
+      .videobg{
+
+        width: 110vw;
+        z-index: 1;
+
+        video{
+          height: 100vh;
+          width: 100vw;
+          object-fit: cover;
+          object-position: center;
+
+        }
+
+      }
+    .header_content{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.25em;
+      margin: 0 1em 0px 1em;
+      z-index: 9;
+      img{
+
+        margin-top: 5em;
+      }
+      button{
+
+        width: 200px;
+        height: 57px;
+        padding: 16px 19px;
+        background: #FFFFFF;
+        color: $primaryColor;
+        border: none;
+        border-radius: 10px;
+        font-size: 12px;
+        font-family: $typocorp;
+        margin-top: 5em;
+        transition: all .2s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+          transform: scale(0.9);
+        }
+
+        &:focus{
+      outline: none;
+    }
+
+      }
+
+    }
+    .cta{
+      position: relative;
+      top: 15em;
+      #cta_intro{
+
+        text-decoration: none;
+        p{
+
+          color: #FFFF;
+          font-size: 16px;
+          font-weight: 50;
+          font-family: $typocorp;
+          text-align: center;
+
+        }
+
+
+      }
+    }
+
+
+
+
+
+
+    .content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1{
+
+
+        font-size:100px;
+        font-family: $typotitle;
+        text-align: center;
+        line-height: 1em;
+        color: #FFFF;
+        letter-spacing: 0.015em;
+        margin-top: 210px;
+        margin-bottom: 8px;
+        height: 190px;
+
+      }
+      h2{
+        font-size: 22px;
+        letter-spacing: -0.03em;
+        color: #FFFFFF;
+        font-family: $typocorp;
+        font-weight: 100;
+        margin-top: 8px;
+
+      }
+
+
+    }
+  }
+
+
+  .tittle{
+
+  #third{
+    background-image:url("/src/image/technique.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img{
+
+      width: 310px;
+      height: 20px;
+      position: relative;
+      bottom: -33.4em;
+      left:6%;
+    }
+  }
+    #first{
+
+      background-image:url("/src/image/first.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    img{
+
+      width: 250px;
+      height: 20px;
+      position: relative;
+      bottom: -34em;
+      left:6%;
+    }
+
+    }
+
+    #fourth{
+
+      background-image:url("/src/image/dossier.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      img{
+
+        width: 1000px;
+        height: 20px;
+        position: relative;
+        bottom: -34em;
+        left:6%;
+      }
+    }
+
+    #fifth{
+
+      background-image:url("/src/image/don .jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      img{
+
+        width: 580px;
+        height: 20px;
+        position: relative;
+        bottom: -33.4em;
+        left:6%;
+      }
+    }
+
+    #second{
+
+      background-image:url("/src/image/rencontre.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 630px;
+        height: 20px;
+        position: relative;
+        bottom: -33em;
+        left:6%;
+      }
+
+    }
+
+    #sixth{
+
+      background-image:url("/src/image/engage.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 570px;
+        height: 20px;
+        position: relative;
+        bottom: -33em;
+        left:6%;
+      }
+
+    }
+
+    #seventh{
+
+      background-image:url("/src/image/tour.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 480px;
+        height: 20px;
+        position: relative;
+        bottom: -34em;
+        left:6%;
+      }
+
+    }
+
+
+    #eight{
+
+      background-image:url("/src/image/bail.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+
+      img{
+
+        width: 700px;
+        height: 20px;
+        position: relative;
+        bottom: -34em;
+        left:6%;
+      }
+
+    }
+
+    article{
+      background-image:url("http://placehold.it/1280x720");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+      .tittle_content{
+
+        font-size: 61px;
+        position: relative;
+        bottom: -9em;
+        left:6%;
+        width: 500px;
+        font-family: $typotitle;
+        color: $colorbody;
+        line-height: 1.2;
+
+      }
+
+    }
+
+  }
+
+  .step{
+
+
+    width: 100vw;
+  //début volet détails//
+    .button_detail{
+      position: absolute;
+      top: 74%;
+      left: 1%;
+      z-index: 21;
+
+      width:24px;
+      height: 24px;
+      cursor: pointer;
+
+img{
+
+  width:250px;
+  height: auto;
+}
+
+    }
+
+    .details{
+
+      position: absolute;
+      top: 0;
+      right: $marge / 2;
+      width: 100vw;
+      height: 100vh;
+      transition: all 1s;
+      transform: translateX(110%);
+      color: black;
+      padding: $marge;
+      z-index: 99;
+      background-image: url('/src/image/fond.png');
+      background-color: $colorbody;
+
+      iframe{
+
+        width:700px;
+        height: 800px;
+        margin-left:2%;
+        margin-top: 2%;
+        border-radius: 15px;
+      }
+
+        .backbutoon{
+        position: relative;
+        z-index: 99;
+        left: 5%;
+        font-weight: bolder;
+        font-family: $typocorp;
+        color: brown;
+        text-transform: uppercase;
+      }
+
+        .contentdetails{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90vh;
+
+        iframe{
+
+          margin: auto;
+          border-radius: 15px;
+        }
+
+        .left{
+
+          width: 100vw;
+          height: 50vh;
+
+
+          .img_détails{
+            position: absolute;
+            top:8%;
+            left:20%;
+            height: auto;
+            width: 60vw;
+            border-radius: 15px;
+          }
+
+        }
+
+
+
+        .right{
+          width: 90vw;
+          height: 40vh;
+          padding-right: 1%;
+
+
+          p{
+
+            font-size: 16px;
+            font-family: $typocorp;
+            font-weight: normal;
+          }
+
+
+          h3{
+            font-size: 18px;
+            font-family: $typocorp;
+            color: brown;
+            opacity: 0.80;
+            font-style: italic;
+            font-weight: lighter;
+            height: 24px;
+            margin-bottom: 32px;
+          }
+
+          h2{
+            font-size: 40px;
+            font-family: $typotitle;
+            color: $primaryColor;
+            height: 40px;
+            margin-bottom: 8px;
+          }
+
+
+        }
+      }
+
+      &.open{
+        transform: translateX(2%);
+      }
+    }
+  //Fin volet détails//
+
+  //sidebar EXPLICATIVE//
+
+    .button{
+      position: absolute;
+
+      width:24px;
+      height: 24px;
+      left: 50%;
+      top: 50%;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 21;
+    }
+
+    .sidebar{
+      background-color: $primaryColor;
+      position: absolute;
+      top: 0;
+      right: $marge / 2;
+      width: 50%;
+      height: 100vh;
+      transition: all 1s;
+      transform: translateX(100%);
+      opacity: 0%;
+      color: white;
+      padding: $marge;
+      z-index: 21;
+
+      H3{
+        margin-top: $marge;
+        color: #ECE6CF;
+        font-size: 24px;
+        font-family: $typotitle;
+        margin-bottom: $marge;
+        overflow-y: scroll;
+      }
+
+      ul{
+
+        position: relative;
+        top: -65%;
+      }
+
+      li{
+        font-family: $typocorp;
+        font-size : 16px;
+        font-weight: 200;
+      }
+
+      p{
+        font-family: $typocorp;
+        font-size : 16px;
+        font-weight: 200;
+        height: 72vh;
+        overflow: scroll;
+
+      }
+      &.open{
+        transform: translateX(6%);
+        opacity: 100%;
+      }
+    }
+  }
+
+  .sixth_step{
+
+    .background{
+      background-image: url('/src/image/engageilu.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 320px;
+      height: 140px;
+      left: 35%;
+      top: 44%;
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+
+  }
+
+  .seventh_step{
+
+    .background{
+      background-image: url('/src/image/tour.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 320px;
+      height: 140px;
+      left: 45%;
+      top: 44%;
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+
+  }
+
+  .nine_step{
+
+    .background{
+      background-image: url('/src/image/champagne.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 320px;
+      height: 140px;
+      left: 45%;
+      top: 44%;
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+
+  }
+  .first_step{
+
+    .background{
+      background-image: url('/src/image/rencontre.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left;
+
+      ;
+
+    }
+
+    .button{
+
+      position: absolute;
+      width: 120px;
+      height: 140px;
+      left: 250px;
+      top: 48%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .second_step{
+
+    .background{
+      background-image: url('/src/image/terre_vendre.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 120px;
+      height: 140px;
+      left: 48%;
+      top: 48%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .fourth_step{
+
+    .background{
+      background-image: url('/src/image/etude.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 120px;
+      height: 140px;
+      left: 45%;
+      top: 48%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .third_step{
+
+    .background{
+      background-image: url('/src/image/faisabilité.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+
+    .button{
+
+      position: absolute;
+
+      width: 120px;
+      height: 140px;
+      left: 48%;
+      top: 52%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+  }
+
+  .fifth_step{
+
+    .background{
+      background-image: url('/src/image/don.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+    .button{
+
+      position: absolute;
+
+      width: 520px;
+      height: 140px;
+      left: 35%;
+      top: 24%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+  }
+
+  .eight_step{
+
+    .background{
+      background-image: url('/src/image/signature.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      ;
+
+    }
+
+    .button{
+
+      position: absolute;
+      width: 320px;
+      height: 140px;
+      left: 35%;
+      top: 70%;
+
+      cursor: pointer;
+      z-index: 21;
+
+    }
+
+  }
+
+  #tom_explication{
+
+    h2{
+      font-size: 60px;
+      font-family: $typotitle;
+      margin:66px 0 16px 90px;
+      color: $primaryColor;
+
+
+    }
+
+    p{
+      width: 300px;
+      font-size: 16px;
+      margin:0 0 0 90px;
+      font-family: $typocorp;
+    }
+
+    .img_content{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+
+  }
 }
